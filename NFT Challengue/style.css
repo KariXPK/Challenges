@@ -1,0 +1,197 @@
+:root {
+    /* PRIMARIOS */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --Very-dark--blue1
+    /*(main BG)*/
+    : hsl(217, 54%, 11%);
+    --Very-dark--blue2
+    /*(card BG)*/
+    : hsl(216, 50%, 16%);
+    --Very-dark--blue3
+    /*(line)*/
+    : hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--Very-dark--blue1);
+    font-size: 18px;
+    font-family: 'Corinthia', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 15.7rem;
+    height: auto;
+    background-color: var(--Very-dark--blue2);
+    border-radius: 11px;
+    padding: 18.3px;
+    box-shadow: 0px 30px 10px 35px rgba(6, 4, 97, 0.048), 0px 10px 2px 18px rgba(12, 7, 59, 0.068);
+    position: relative;
+
+
+}
+
+.card img {
+    width: 100%;
+    height: 55%;
+    border-radius: 6px;
+}
+
+#lilo {
+    left: 19px;
+    height: 50%;
+    width: auto;
+    opacity: 0%;
+    top: 19px;
+    position: absolute;
+}
+
+.card h2 {
+    font-size: 16.45px;
+    color: var(--White);
+    font-weight: 500;
+    margin-top: 11px;
+}
+
+.card p {
+    font-size: 12.5px;
+    color: var(--Soft-blue);
+    margin-top: 10px;
+}
+
+.minibox {
+
+    width: 100%;
+
+    display: flex;
+    position: relative;
+}
+
+.card .minibox div {
+    margin-top: 9px;
+}
+
+.card .minibox .first {
+    height: 40px;
+    width: 50%;
+    position: relative;
+    word-spacing: -1.3px;
+
+
+}
+
+.card .minibox .first img {
+    height: 14px;
+    width: auto;
+    position: relative;
+    top: 1.4px;
+
+
+}
+
+.card .minibox .first p {
+    font-size: 11.35px;
+    display: inline-block;
+    color: var(--Cyan);
+    font-family: 'Raleway', sans-serif;
+    word-spacing: -1.7px;
+    letter-spacing: .13px;
+
+}
+
+.card .minibox .second {
+    height: 40px;
+    width: 50%;
+    position: relative;
+    word-spacing: -1.3px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+.card .minibox .second img {
+    height: 14px;
+    width: auto;
+    position: relative;
+    margin-right: 5px;
+    position: relative;
+    top: -4px;
+
+
+
+}
+
+.card .minibox .second p {
+    font-size: 11.35px;
+    position: relative;
+    top: -9px;
+    color: var(--Soft-blue);
+    font-family: 'Raleway', sans-serif;
+    word-spacing: -0.6px;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    color: var(--Very-dark--blue3);
+    background-color: var(--Very-dark--blue3);
+    height: 1.1px;
+
+    opacity: 80%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-top: 10px;
+    height: 28.5px;
+    justify-content: flex-end;
+    font-family: 'Outfit', sans-serif;
+    gap: 6px;
+
+}
+
+.footer img {
+    height: 100%;
+    width: auto;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.footer p {
+    font-size: 12px;
+
+}
+
+.footer p:last-child {
+    color: var(--Very-dark--blue3);
+
+
+}
+
+.footer p:first-child {
+    color: var(--White);
+    justify-self: flex-start;
+
+}
+#lilo:hover{
+   transition: 1.7s;
+   opacity: 100%;
+  
+}
